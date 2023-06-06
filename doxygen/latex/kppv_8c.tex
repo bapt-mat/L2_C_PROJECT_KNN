@@ -1,0 +1,188 @@
+\hypertarget{kppv_8c}{}\doxysection{/home/baptiste/\+L2/\+S2/\+PROG\+\_\+\+IMP/\+PROJET\+\_\+\+KPPV/src/kppv.c File Reference}
+\label{kppv_8c}\index{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/src/kppv.c@{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/src/kppv.c}}
+
+
+Kppv mode tableau.  
+
+
+{\ttfamily \#include \char`\"{}../headers/kppv.\+h\char`\"{}}\newline
+Include dependency graph for kppv.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kppv_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{kppv_8c_ade48f08ea91ec4a2792d237c3d175bc7}{distance\+\_\+euclidienne}} (\mbox{\hyperlink{structpoint}{point}} p1, \mbox{\hyperlink{structpoint}{point}} p2)
+\begin{DoxyCompactList}\small\item\em Calcul de la distance euclidienne entre deux points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kppv_8c_aceddb9e0dccaa8c7e7c7c879e96339c0}{tri\+\_\+points\+\_\+distance}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} t, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Tri a bulle du tableau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kppv_8c_a7d6f74acad12f7faf54b4e30804c6a36}{tri\+\_\+points\+\_\+distance\+\_\+fusion}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} t, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Tri fusion du tableau fonction 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kppv_8c_a53149a2566d16e0126a9a612eb31c061}{tri\+\_\+fusion}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} t, \mbox{\hyperlink{structpoint}{point}} p, int debut, int fin)
+\begin{DoxyCompactList}\small\item\em Tri fusion du tableau fonction 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kppv_8c_a5ac671f8db6a3300c96aca866a29c52f}{fusionner}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} t, \mbox{\hyperlink{structpoint}{point}} p, int debut, int milieu, int fin)
+\begin{DoxyCompactList}\small\item\em Tri fusion du tableau fonction 3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{kppv_8c_aedd86f731d4108b42dc320f49ab75b31}{kppv}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, \mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tab\+\_\+kppv, \mbox{\hyperlink{structpoint}{point}} p, int nb\+\_\+kppv)
+\begin{DoxyCompactList}\small\item\em kppv \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{kppv_8c_ae310a91a03dd40345ea86fed5f966b01}{classe\+\_\+kppv}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tab\+\_\+kppv)
+\begin{DoxyCompactList}\small\item\em Calcul de la classe du point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kppv mode tableau. 
+
+\begin{DoxyAuthor}{Author}
+mathevon/palisse 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/21 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kppv_8c_ae310a91a03dd40345ea86fed5f966b01}\label{kppv_8c_ae310a91a03dd40345ea86fed5f966b01}} 
+\index{kppv.c@{kppv.c}!classe\_kppv@{classe\_kppv}}
+\index{classe\_kppv@{classe\_kppv}!kppv.c@{kppv.c}}
+\doxysubsubsection{\texorpdfstring{classe\_kppv()}{classe\_kppv()}}
+{\footnotesize\ttfamily int classe\+\_\+kppv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tab\+\_\+kppv }\end{DoxyParamCaption})}
+
+
+
+Calcul de la classe du point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+\_\+kppv} & tableau des kppv \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{kppv_8c_ade48f08ea91ec4a2792d237c3d175bc7}\label{kppv_8c_ade48f08ea91ec4a2792d237c3d175bc7}} 
+\index{kppv.c@{kppv.c}!distance\_euclidienne@{distance\_euclidienne}}
+\index{distance\_euclidienne@{distance\_euclidienne}!kppv.c@{kppv.c}}
+\doxysubsubsection{\texorpdfstring{distance\_euclidienne()}{distance\_euclidienne()}}
+{\footnotesize\ttfamily float distance\+\_\+euclidienne (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p1,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Calcul de la distance euclidienne entre deux points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{kppv_8c_a5ac671f8db6a3300c96aca866a29c52f}\label{kppv_8c_a5ac671f8db6a3300c96aca866a29c52f}} 
+\index{kppv.c@{kppv.c}!fusionner@{fusionner}}
+\index{fusionner@{fusionner}!kppv.c@{kppv.c}}
+\doxysubsubsection{\texorpdfstring{fusionner()}{fusionner()}}
+{\footnotesize\ttfamily void fusionner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{t,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{int}]{debut,  }\item[{int}]{milieu,  }\item[{int}]{fin }\end{DoxyParamCaption})}
+
+
+
+Tri fusion du tableau fonction 3. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & tableau de points \\
+\hline
+{\em p} & point selectionné \\
+\hline
+{\em debut} & \\
+\hline
+{\em milieu} & \\
+\hline
+{\em fin} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kppv_8c_aedd86f731d4108b42dc320f49ab75b31}\label{kppv_8c_aedd86f731d4108b42dc320f49ab75b31}} 
+\index{kppv.c@{kppv.c}!kppv@{kppv}}
+\index{kppv@{kppv}!kppv.c@{kppv.c}}
+\doxysubsubsection{\texorpdfstring{kppv()}{kppv()}}
+{\footnotesize\ttfamily void kppv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tab\+\_\+kppv,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{int}]{nb\+\_\+kppv }\end{DoxyParamCaption})}
+
+
+
+kppv 
+
+Calcul des kppv.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & tableau de points \\
+\hline
+{\em tab\+\_\+kppv} & tableau des kppv \\
+\hline
+{\em p} & point selectionné \\
+\hline
+{\em nb\+\_\+kppv} & nb max de kppv \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kppv_8c_a53149a2566d16e0126a9a612eb31c061}\label{kppv_8c_a53149a2566d16e0126a9a612eb31c061}} 
+\index{kppv.c@{kppv.c}!tri\_fusion@{tri\_fusion}}
+\index{tri\_fusion@{tri\_fusion}!kppv.c@{kppv.c}}
+\doxysubsubsection{\texorpdfstring{tri\_fusion()}{tri\_fusion()}}
+{\footnotesize\ttfamily void tri\+\_\+fusion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{t,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{int}]{debut,  }\item[{int}]{fin }\end{DoxyParamCaption})}
+
+
+
+Tri fusion du tableau fonction 2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & tableau de points \\
+\hline
+{\em p} & point selectionné \\
+\hline
+{\em debut} & \\
+\hline
+{\em fin} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kppv_8c_aceddb9e0dccaa8c7e7c7c879e96339c0}\label{kppv_8c_aceddb9e0dccaa8c7e7c7c879e96339c0}} 
+\index{kppv.c@{kppv.c}!tri\_points\_distance@{tri\_points\_distance}}
+\index{tri\_points\_distance@{tri\_points\_distance}!kppv.c@{kppv.c}}
+\doxysubsubsection{\texorpdfstring{tri\_points\_distance()}{tri\_points\_distance()}}
+{\footnotesize\ttfamily void tri\+\_\+points\+\_\+distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{t,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Tri a bulle du tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & tableau de points \\
+\hline
+{\em p} & point selectionné \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kppv_8c_a7d6f74acad12f7faf54b4e30804c6a36}\label{kppv_8c_a7d6f74acad12f7faf54b4e30804c6a36}} 
+\index{kppv.c@{kppv.c}!tri\_points\_distance\_fusion@{tri\_points\_distance\_fusion}}
+\index{tri\_points\_distance\_fusion@{tri\_points\_distance\_fusion}!kppv.c@{kppv.c}}
+\doxysubsubsection{\texorpdfstring{tri\_points\_distance\_fusion()}{tri\_points\_distance\_fusion()}}
+{\footnotesize\ttfamily void tri\+\_\+points\+\_\+distance\+\_\+fusion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{t,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Tri fusion du tableau fonction 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & tableau de points \\
+\hline
+{\em p} & point selectionné \\
+\hline
+\end{DoxyParams}

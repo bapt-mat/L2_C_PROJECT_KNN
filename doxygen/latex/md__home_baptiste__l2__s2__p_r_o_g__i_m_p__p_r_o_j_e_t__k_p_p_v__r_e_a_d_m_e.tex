@@ -1,0 +1,17 @@
+PROJET DE PROGRAMMATION IMPERATIVE -\/ L2 INFO K Plus Proches Voisins
+
+MATHEVON Baptiste -\/ PALISSE Erwann
+
+Documentation Doxygen disponible (html, pdf)
+
+Exécutable principal \+: -\/$>$ make; -\/$>$ Usage \+: ./main $<$\+MLV\+\_\+yes\+\_\+no$>$ $<$chemin\+\_\+fichier (opt.)$>$ $<$nb\+\_\+kppv (opt.)$>$ $<$mode (tab/tab\+\_\+fusion/arbre) (opt.)$>$ -\/$>$ ./main yes (lancement de l\textquotesingle{}exécutable avec MLV) -\/$>$ ./main no $<$chemin\+\_\+fichier$>$ $<$nb\+\_\+kppv$>$ $<$mode (tab/tab\+\_\+fusion/arbre)$>$ (utilisé pour les temps de calcul)
+
+Exécutable génération de fichiers de tests \+: -\/$>$ cd donnees/prog\+\_\+creation -\/$>$ gcc creation.\+c -\/o (script\+\_\+creation/creation)
+
+Génération de fichiers de tests \+: -\/$>$ cd donnees/ -\/$>$ bash data\+\_\+gen.\+sh -\/$>$ Usage\+: data\+\_\+gen.\+sh $<$nb\+\_\+points$>$ $<$nb\+\_\+dim$>$ $<$nb\+\_\+classes$>$
+
+Génération des temps de calcul \+: -\/$>$ cd time\+\_\+analysis -\/$>$ bash script\+\_\+time.\+sh -\/$>$ Usage\+: script\+\_\+time.\+sh $<$nb\+\_\+points$>$ $<$valeur\+\_\+de\+\_\+k$>$ $<$mode(tab/tab\+\_\+fusion/arbre)$>$
+
+Calcul des moyennes \+: -\/$>$ cd time\+\_\+analysis -\/$>$ bash script\+\_\+moyenne.\+sh -\/$>$ Usage\+: script\+\_\+moyenne.\+sh $<$type\+\_\+moy (en fct de k/n)$>$ $<$nb\+\_\+n si n/nb\+\_\+k si k$>$ $<$mode$>$
+
+Génération des graphiques \+: -\/$>$ cd time\+\_\+analysis -\/$>$ bash script\+\_\+graph.\+sh -\/$>$ Usage\+: script\+\_\+graph.\+sh $<$en fct de n ou k$>$ $<$valeur de n/k$>$ 

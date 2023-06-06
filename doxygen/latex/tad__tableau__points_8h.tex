@@ -1,0 +1,364 @@
+\hypertarget{tad__tableau__points_8h}{}\doxysection{/home/baptiste/\+L2/\+S2/\+PROG\+\_\+\+IMP/\+PROJET\+\_\+\+KPPV/headers/tad\+\_\+tableau\+\_\+points.h File Reference}
+\label{tad__tableau__points_8h}\index{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/tad\_tableau\_points.h@{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/tad\_tableau\_points.h}}
+
+
+TAD tableau de points.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for tad\+\_\+tableau\+\_\+points.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{tad__tableau__points_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tad__tableau__points_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpoint}{point}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}un point. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstruct__tab__points}{struct\+\_\+tab\+\_\+points}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}un tableau de points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{tad__tableau__points_8h_a2ecf5ad25ffd3084516069372bdc4a79}\label{tad__tableau__points_8h_a2ecf5ad25ffd3084516069372bdc4a79}} 
+typedef struct \mbox{\hyperlink{structstruct__tab__points}{struct\+\_\+tab\+\_\+points}} \mbox{\hyperlink{tad__tableau__points_8h_a2ecf5ad25ffd3084516069372bdc4a79}{struct\+\_\+tab\+\_\+points}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}un tableau de points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}\label{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}} 
+typedef \mbox{\hyperlink{structstruct__tab__points}{struct\+\_\+tab\+\_\+points}} $\ast$ \mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}
+\begin{DoxyCompactList}\small\item\em Type tab\+\_\+points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} \mbox{\hyperlink{tad__tableau__points_8h_a6644bc6727337ddb2c1ccfb73114013d}{creer\+\_\+tableau\+\_\+points}} (int taille\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Allocation de la mémoire nécessaire pour un tab\+\_\+points d\textquotesingle{}une taille\+\_\+max. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} \mbox{\hyperlink{tad__tableau__points_8h_a2d8407fd39352624e5d2d4bc2dc7b45f}{ajouter\+\_\+point}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}un point dans le tableau. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} \mbox{\hyperlink{tad__tableau__points_8h_a74a0abd4f317d86c898e31e4eb8d95e3}{supprimer\+\_\+point}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, int position)
+\begin{DoxyCompactList}\small\item\em Suppression d\textquotesingle{}un point dans le tableau. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} \mbox{\hyperlink{tad__tableau__points_8h_a43ae3c563c3cf833cc2c281a97ac6ac9}{realloc\+\_\+tab}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, int taille)
+\begin{DoxyCompactList}\small\item\em Réallocation de la mémoire pour un tableau de points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tad__tableau__points_8h_a4e00ef146fd8ca7d83285675cb94a57e}{nettoyer\+\_\+tableau\+\_\+points}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Nettoyage du tableau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tad__tableau__points_8h_a8c99d1ecbda1830edcd395c88b06c46f}{afficher\+\_\+tableau\+\_\+points}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Affichage du tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tad__tableau__points_8h_a603b4c8f60bef9c3bf289603025b0206}{est\+\_\+present\+\_\+tab\+\_\+points}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Test si un point est présent dans le tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tad__tableau__points_8h_ab03abe4b88b9b05cf0b2d862112a3647}{chargement\+\_\+fichier}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, char $\ast$nom\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em Chargement d\textquotesingle{}un fichier dans un tableau de points. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tad__tableau__points_8h_af7f39a9abb079bf0b6ac1443f18d7755}{sauvegarde\+\_\+fichier}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, char $\ast$nom\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em Sauvegarde d\textquotesingle{}un tableau de points dans un fichier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{tad__tableau__points_8h_a9be5829c556e8be5e9a68a7cf7eb75b9}{gen\+\_\+point\+\_\+aleatoire}} (int classe, int x\+\_\+min, int x\+\_\+max, int y\+\_\+min, int y\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Génération d\textquotesingle{}un point aléatoire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tad__tableau__points_8h_a420f1e615d922dd6af03bf1d4085c0a4}{liberation\+\_\+tableau\+\_\+points}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Libere la mémoire allouée pour un tableau de points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TAD tableau de points. 
+
+\begin{DoxyAuthor}{Author}
+mathevon/palisse 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/21 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tad__tableau__points_8h_a8c99d1ecbda1830edcd395c88b06c46f}\label{tad__tableau__points_8h_a8c99d1ecbda1830edcd395c88b06c46f}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!afficher\_tableau\_points@{afficher\_tableau\_points}}
+\index{afficher\_tableau\_points@{afficher\_tableau\_points}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_tableau\_points()}{afficher\_tableau\_points()}}
+{\footnotesize\ttfamily void afficher\+\_\+tableau\+\_\+points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Affichage du tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tad__tableau__points_8h_a2d8407fd39352624e5d2d4bc2dc7b45f}\label{tad__tableau__points_8h_a2d8407fd39352624e5d2d4bc2dc7b45f}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!ajouter\_point@{ajouter\_point}}
+\index{ajouter\_point@{ajouter\_point}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{ajouter\_point()}{ajouter\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} ajouter\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Ajout d\textquotesingle{}un point dans le tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tab\+\_\+points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__tableau__points_8h_ab03abe4b88b9b05cf0b2d862112a3647}\label{tad__tableau__points_8h_ab03abe4b88b9b05cf0b2d862112a3647}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!chargement\_fichier@{chargement\_fichier}}
+\index{chargement\_fichier@{chargement\_fichier}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{chargement\_fichier()}{chargement\_fichier()}}
+{\footnotesize\ttfamily int chargement\+\_\+fichier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{char $\ast$}]{nom\+\_\+fichier }\end{DoxyParamCaption})}
+
+
+
+Chargement d\textquotesingle{}un fichier dans un tableau de points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em nom\+\_\+fichier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Chargement d\textquotesingle{}un fichier dans un tableau de points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em nom\+\_\+fichier} & nom du fichier que l\textquotesingle{}on veut charger dans le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__tableau__points_8h_a6644bc6727337ddb2c1ccfb73114013d}\label{tad__tableau__points_8h_a6644bc6727337ddb2c1ccfb73114013d}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!creer\_tableau\_points@{creer\_tableau\_points}}
+\index{creer\_tableau\_points@{creer\_tableau\_points}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{creer\_tableau\_points()}{creer\_tableau\_points()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} creer\+\_\+tableau\+\_\+points (\begin{DoxyParamCaption}\item[{int}]{taille\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Allocation de la mémoire nécessaire pour un tab\+\_\+points d\textquotesingle{}une taille\+\_\+max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taille\+\_\+max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tab\+\_\+points
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em taille\+\_\+max} & la taille max du tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tab\+\_\+points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__tableau__points_8h_a603b4c8f60bef9c3bf289603025b0206}\label{tad__tableau__points_8h_a603b4c8f60bef9c3bf289603025b0206}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!est\_present\_tab\_points@{est\_present\_tab\_points}}
+\index{est\_present\_tab\_points@{est\_present\_tab\_points}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{est\_present\_tab\_points()}{est\_present\_tab\_points()}}
+{\footnotesize\ttfamily int est\+\_\+present\+\_\+tab\+\_\+points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Test si un point est présent dans le tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Test si un point est présent dans le tableau.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em p} & point à verifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__tableau__points_8h_a9be5829c556e8be5e9a68a7cf7eb75b9}\label{tad__tableau__points_8h_a9be5829c556e8be5e9a68a7cf7eb75b9}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!gen\_point\_aleatoire@{gen\_point\_aleatoire}}
+\index{gen\_point\_aleatoire@{gen\_point\_aleatoire}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{gen\_point\_aleatoire()}{gen\_point\_aleatoire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} gen\+\_\+point\+\_\+aleatoire (\begin{DoxyParamCaption}\item[{int}]{classe,  }\item[{int}]{x\+\_\+min,  }\item[{int}]{x\+\_\+max,  }\item[{int}]{y\+\_\+min,  }\item[{int}]{y\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Génération d\textquotesingle{}un point aléatoire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classe} & \\
+\hline
+{\em x\+\_\+min} & \\
+\hline
+{\em x\+\_\+max} & \\
+\hline
+{\em y\+\_\+min} & \\
+\hline
+{\em y\+\_\+max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__tableau__points_8h_a420f1e615d922dd6af03bf1d4085c0a4}\label{tad__tableau__points_8h_a420f1e615d922dd6af03bf1d4085c0a4}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!liberation\_tableau\_points@{liberation\_tableau\_points}}
+\index{liberation\_tableau\_points@{liberation\_tableau\_points}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{liberation\_tableau\_points()}{liberation\_tableau\_points()}}
+{\footnotesize\ttfamily void liberation\+\_\+tableau\+\_\+points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Libere la mémoire allouée pour un tableau de points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+Libere la mémoire allouée pour un tableau de points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tad__tableau__points_8h_a4e00ef146fd8ca7d83285675cb94a57e}\label{tad__tableau__points_8h_a4e00ef146fd8ca7d83285675cb94a57e}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!nettoyer\_tableau\_points@{nettoyer\_tableau\_points}}
+\index{nettoyer\_tableau\_points@{nettoyer\_tableau\_points}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{nettoyer\_tableau\_points()}{nettoyer\_tableau\_points()}}
+{\footnotesize\ttfamily void nettoyer\+\_\+tableau\+\_\+points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Nettoyage du tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tad__tableau__points_8h_a43ae3c563c3cf833cc2c281a97ac6ac9}\label{tad__tableau__points_8h_a43ae3c563c3cf833cc2c281a97ac6ac9}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!realloc\_tab@{realloc\_tab}}
+\index{realloc\_tab@{realloc\_tab}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{realloc\_tab()}{realloc\_tab()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} realloc\+\_\+tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+Réallocation de la mémoire pour un tableau de points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em taille} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tab\+\_\+points
+\end{DoxyReturn}
+Réallocation de la mémoire pour un tableau de points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em taille} & nouvelle taille du tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tab\+\_\+points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__tableau__points_8h_af7f39a9abb079bf0b6ac1443f18d7755}\label{tad__tableau__points_8h_af7f39a9abb079bf0b6ac1443f18d7755}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!sauvegarde\_fichier@{sauvegarde\_fichier}}
+\index{sauvegarde\_fichier@{sauvegarde\_fichier}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{sauvegarde\_fichier()}{sauvegarde\_fichier()}}
+{\footnotesize\ttfamily int sauvegarde\+\_\+fichier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{char $\ast$}]{nom\+\_\+fichier }\end{DoxyParamCaption})}
+
+
+
+Sauvegarde d\textquotesingle{}un tableau de points dans un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em nom\+\_\+fichier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Sauvegarde d\textquotesingle{}un tableau de points dans un fichier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em nom\+\_\+fichier} & nom du fichier dans lequel on veut sauvegarder le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__tableau__points_8h_a74a0abd4f317d86c898e31e4eb8d95e3}\label{tad__tableau__points_8h_a74a0abd4f317d86c898e31e4eb8d95e3}} 
+\index{tad\_tableau\_points.h@{tad\_tableau\_points.h}!supprimer\_point@{supprimer\_point}}
+\index{supprimer\_point@{supprimer\_point}!tad\_tableau\_points.h@{tad\_tableau\_points.h}}
+\doxysubsubsection{\texorpdfstring{supprimer\_point()}{supprimer\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} supprimer\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+Suppression d\textquotesingle{}un point dans le tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tab\+\_\+points
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em position} & pos du point a supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tab\+\_\+points 
+\end{DoxyReturn}

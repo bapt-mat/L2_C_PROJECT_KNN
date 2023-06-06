@@ -1,0 +1,199 @@
+\hypertarget{mlv__kppv_8c}{}\doxysection{/home/baptiste/\+L2/\+S2/\+PROG\+\_\+\+IMP/\+PROJET\+\_\+\+KPPV/src/mlv\+\_\+kppv.c File Reference}
+\label{mlv__kppv_8c}\index{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/src/mlv\_kppv.c@{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/src/mlv\_kppv.c}}
+
+
+Fonctions mlv mode tableau kppv.  
+
+
+{\ttfamily \#include \char`\"{}../headers/mlv\+\_\+kppv.\+h\char`\"{}}\newline
+Include dependency graph for mlv\+\_\+kppv.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mlv__kppv_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{mlv__kppv_8c_a24ff8667f704ae4f82b3cc58f4869391}{mlv\+\_\+maj\+\_\+affichage}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, \mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tab\+\_\+kppv, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Reinitialisation de l\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mlv__kppv_8c_a75f2c3e11e5430d4073067773e894bd3}{selection\+\_\+point\+\_\+kppv}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Selection du point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__kppv_8c_ac5ca3761fe5d3ad6e47a1f54749fd0fa}{mlv\+\_\+dessin\+\_\+point}} (\mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Mise en évidence du point selectionné \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__kppv_8c_a49a198fc04430cb994f35b4dca717394}{mlv\+\_\+dessin\+\_\+voisinage}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tab\+\_\+kppv, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Dessin du voisinage du point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__kppv_8c_a15db1f812dc7e4b8259f1bd1eab883c1}{mlv\+\_\+classe\+\_\+kppv}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tab\+\_\+kppv, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Affichage de la classe du point calculé en fct des classe de ses kppv. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__kppv_8c_aa74cd7b2a288c3dd340741827c4ab643}{mlv\+\_\+kppv}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Fonction general mode kppv tableau. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} $\ast$ \mbox{\hyperlink{mlv__kppv_8c_a1562e665454ff3d6f1c904a90160d1a7}{mlv\+\_\+creer\+\_\+point\+\_\+kppv}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}un nouveau point pour le mode kppv tableau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__kppv_8c_abbf6679b97d3da8ac8043c722513db51}{mlv\+\_\+ajouter\+\_\+point\+\_\+kppv}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}un point dans le tableau et dans l\textquotesingle{}arbre kd et calcul de la classe en fct des kppv. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fonctions mlv mode tableau kppv. 
+
+\begin{DoxyAuthor}{Author}
+mathevon/palisse 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/21 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mlv__kppv_8c_abbf6679b97d3da8ac8043c722513db51}\label{mlv__kppv_8c_abbf6679b97d3da8ac8043c722513db51}} 
+\index{mlv\_kppv.c@{mlv\_kppv.c}!mlv\_ajouter\_point\_kppv@{mlv\_ajouter\_point\_kppv}}
+\index{mlv\_ajouter\_point\_kppv@{mlv\_ajouter\_point\_kppv}!mlv\_kppv.c@{mlv\_kppv.c}}
+\doxysubsubsection{\texorpdfstring{mlv\_ajouter\_point\_kppv()}{mlv\_ajouter\_point\_kppv()}}
+{\footnotesize\ttfamily void mlv\+\_\+ajouter\+\_\+point\+\_\+kppv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+Ajout d\textquotesingle{}un point dans le tableau et dans l\textquotesingle{}arbre kd et calcul de la classe en fct des kppv. 
+
+Ajout d\textquotesingle{}un point au tableau et a l\textquotesingle{}arbre et calcul de ses kppv et de sa classe.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__kppv_8c_a15db1f812dc7e4b8259f1bd1eab883c1}\label{mlv__kppv_8c_a15db1f812dc7e4b8259f1bd1eab883c1}} 
+\index{mlv\_kppv.c@{mlv\_kppv.c}!mlv\_classe\_kppv@{mlv\_classe\_kppv}}
+\index{mlv\_classe\_kppv@{mlv\_classe\_kppv}!mlv\_kppv.c@{mlv\_kppv.c}}
+\doxysubsubsection{\texorpdfstring{mlv\_classe\_kppv()}{mlv\_classe\_kppv()}}
+{\footnotesize\ttfamily void mlv\+\_\+classe\+\_\+kppv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tab\+\_\+kppv,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Affichage de la classe du point calculé en fct des classe de ses kppv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+\_\+kppv} & tableau des kppv \\
+\hline
+{\em p} & point selectionné \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__kppv_8c_a1562e665454ff3d6f1c904a90160d1a7}\label{mlv__kppv_8c_a1562e665454ff3d6f1c904a90160d1a7}} 
+\index{mlv\_kppv.c@{mlv\_kppv.c}!mlv\_creer\_point\_kppv@{mlv\_creer\_point\_kppv}}
+\index{mlv\_creer\_point\_kppv@{mlv\_creer\_point\_kppv}!mlv\_kppv.c@{mlv\_kppv.c}}
+\doxysubsubsection{\texorpdfstring{mlv\_creer\_point\_kppv()}{mlv\_creer\_point\_kppv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}}$\ast$ mlv\+\_\+creer\+\_\+point\+\_\+kppv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Création d\textquotesingle{}un nouveau point pour le mode kppv tableau. 
+
+Création d\textquotesingle{}un point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mlv__kppv_8c_ac5ca3761fe5d3ad6e47a1f54749fd0fa}\label{mlv__kppv_8c_ac5ca3761fe5d3ad6e47a1f54749fd0fa}} 
+\index{mlv\_kppv.c@{mlv\_kppv.c}!mlv\_dessin\_point@{mlv\_dessin\_point}}
+\index{mlv\_dessin\_point@{mlv\_dessin\_point}!mlv\_kppv.c@{mlv\_kppv.c}}
+\doxysubsubsection{\texorpdfstring{mlv\_dessin\_point()}{mlv\_dessin\_point()}}
+{\footnotesize\ttfamily void mlv\+\_\+dessin\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Mise en évidence du point selectionné 
+
+Mise en évidence du point sélectionné
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & point selectionné \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__kppv_8c_a49a198fc04430cb994f35b4dca717394}\label{mlv__kppv_8c_a49a198fc04430cb994f35b4dca717394}} 
+\index{mlv\_kppv.c@{mlv\_kppv.c}!mlv\_dessin\_voisinage@{mlv\_dessin\_voisinage}}
+\index{mlv\_dessin\_voisinage@{mlv\_dessin\_voisinage}!mlv\_kppv.c@{mlv\_kppv.c}}
+\doxysubsubsection{\texorpdfstring{mlv\_dessin\_voisinage()}{mlv\_dessin\_voisinage()}}
+{\footnotesize\ttfamily void mlv\+\_\+dessin\+\_\+voisinage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tab\+\_\+kppv,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Dessin du voisinage du point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+\_\+kppv} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__kppv_8c_aa74cd7b2a288c3dd340741827c4ab643}\label{mlv__kppv_8c_aa74cd7b2a288c3dd340741827c4ab643}} 
+\index{mlv\_kppv.c@{mlv\_kppv.c}!mlv\_kppv@{mlv\_kppv}}
+\index{mlv\_kppv@{mlv\_kppv}!mlv\_kppv.c@{mlv\_kppv.c}}
+\doxysubsubsection{\texorpdfstring{mlv\_kppv()}{mlv\_kppv()}}
+{\footnotesize\ttfamily void mlv\+\_\+kppv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Fonction general mode kppv tableau. 
+
+Fonction général mode kppv tableau.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__kppv_8c_a24ff8667f704ae4f82b3cc58f4869391}\label{mlv__kppv_8c_a24ff8667f704ae4f82b3cc58f4869391}} 
+\index{mlv\_kppv.c@{mlv\_kppv.c}!mlv\_maj\_affichage@{mlv\_maj\_affichage}}
+\index{mlv\_maj\_affichage@{mlv\_maj\_affichage}!mlv\_kppv.c@{mlv\_kppv.c}}
+\doxysubsubsection{\texorpdfstring{mlv\_maj\_affichage()}{mlv\_maj\_affichage()}}
+{\footnotesize\ttfamily void mlv\+\_\+maj\+\_\+affichage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tab\+\_\+kppv,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Reinitialisation de l\textquotesingle{}affichage. 
+
+Mise à jour de l\textquotesingle{}affichage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & tableau des points \\
+\hline
+{\em tab\+\_\+kppv} & tableau des kppv \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__kppv_8c_a75f2c3e11e5430d4073067773e894bd3}\label{mlv__kppv_8c_a75f2c3e11e5430d4073067773e894bd3}} 
+\index{mlv\_kppv.c@{mlv\_kppv.c}!selection\_point\_kppv@{selection\_point\_kppv}}
+\index{selection\_point\_kppv@{selection\_point\_kppv}!mlv\_kppv.c@{mlv\_kppv.c}}
+\doxysubsubsection{\texorpdfstring{selection\_point\_kppv()}{selection\_point\_kppv()}}
+{\footnotesize\ttfamily int selection\+\_\+point\+\_\+kppv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Selection du point. 
+
+Selection d\textquotesingle{}un point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

@@ -1,0 +1,330 @@
+\hypertarget{mlv__arbre__kd_8h}{}\doxysection{/home/baptiste/\+L2/\+S2/\+PROG\+\_\+\+IMP/\+PROJET\+\_\+\+KPPV/headers/mlv\+\_\+arbre\+\_\+kd.h File Reference}
+\label{mlv__arbre__kd_8h}\index{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/mlv\_arbre\_kd.h@{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/mlv\_arbre\_kd.h}}
+
+
+fonctions mlv pour le mode arbre kd  
+
+
+{\ttfamily \#include \char`\"{}tad\+\_\+arbre\+\_\+kd.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MLV/\+MLV\+\_\+all.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mlv\+\_\+kppv.\+h\char`\"{}}\newline
+Include dependency graph for mlv\+\_\+arbre\+\_\+kd.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mlv__arbre__kd_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mlv__arbre__kd_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_aa46f7eab226b8cbc26f7c22560506ada}{mlv\+\_\+maj\+\_\+affichage\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} $\ast$liste, \mbox{\hyperlink{structpoint}{point}} p, int nb\+\_\+kppv)
+\begin{DoxyCompactList}\small\item\em Reinitialisation de l\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_a3ca0ba9e918c70159e529b873bd5a2d6}{afficher\+\_\+arbre\+\_\+graphique}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, int x, int y, int \mbox{\hyperlink{kppv_8c_ade48f08ea91ec4a2792d237c3d175bc7}{distance\+\_\+euclidienne}})
+\begin{DoxyCompactList}\small\item\em Affichage graphique de l\textquotesingle{}arbre kd. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_a9a553ff2f320694679dca412f0cd3922}{mlv\+\_\+affichage\+\_\+points\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} arbre, int prof)
+\begin{DoxyCompactList}\small\item\em Affichage des points de l\textquotesingle{}arbre kd. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_a5443a9fd8e19ce94e699864db5f4068b}{mlv\+\_\+dessin\+\_\+zone\+\_\+rec}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} arbre, int animation)
+\begin{DoxyCompactList}\small\item\em Affichage des zones de l\textquotesingle{}arbre kd fonction recursive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_a68bf1f2e317afb6398c9549e74ff6721}{mlv\+\_\+dessin\+\_\+zone}} (\mbox{\hyperlink{structzone}{zone}} z, int animation)
+\begin{DoxyCompactList}\small\item\em Affichage des zones de l\textquotesingle{}arbre kd. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_ade13638ba897274c40a2692c146398b7}{mlv\+\_\+dessin\+\_\+voisinage\+\_\+arbre}} (\mbox{\hyperlink{structpoint}{point}} p, \mbox{\hyperlink{structpoint}{point}} $\ast$liste, int taille\+\_\+liste)
+\begin{DoxyCompactList}\small\item\em Dessin du voisinage du point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_a1646de43632ad5dac642b92f27069e16}{mlv\+\_\+classe\+\_\+kppv\+\_\+arbre}} (\mbox{\hyperlink{structpoint}{point}} $\ast$liste, \mbox{\hyperlink{structpoint}{point}} p, int nb\+\_\+kppv)
+\begin{DoxyCompactList}\small\item\em Affichage de la classe du point calculé en fct des classe de ses kppv. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_af82a4697d17f79352f21e11bdbb4ffca}{mlv\+\_\+affichage\+\_\+points\+\_\+kppv\+\_\+liste}} (\mbox{\hyperlink{structpoint}{point}} $\ast$liste, int nb\+\_\+kppv, MLV\+\_\+\+Color couleur)
+\begin{DoxyCompactList}\small\item\em Affichage des points de la liste. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{mlv__arbre__kd_8h_aa2ad621ca7d64bd16992fcea8f91f6cd}{selection\+\_\+point\+\_\+kppv\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Selection du point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__arbre__kd_8h_ab4b6020e840a0f6038f0a9fa7b19f6c7}{mlv\+\_\+kppv\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Affichage du menu mode kppv arbre kd. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+fonctions mlv pour le mode arbre kd 
+
+\begin{DoxyAuthor}{Author}
+mathevon/palisse 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/21 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_a3ca0ba9e918c70159e529b873bd5a2d6}\label{mlv__arbre__kd_8h_a3ca0ba9e918c70159e529b873bd5a2d6}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!afficher\_arbre\_graphique@{afficher\_arbre\_graphique}}
+\index{afficher\_arbre\_graphique@{afficher\_arbre\_graphique}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_arbre\_graphique()}{afficher\_arbre\_graphique()}}
+{\footnotesize\ttfamily void afficher\+\_\+arbre\+\_\+graphique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{distance\+\_\+euclidienne }\end{DoxyParamCaption})}
+
+
+
+Affichage graphique de l\textquotesingle{}arbre kd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em distance\+\_\+euclidienne} & \\
+\hline
+\end{DoxyParams}
+Affichage graphique de l\textquotesingle{}arbre kd.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em distance\+\_\+euclidienne} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_a9a553ff2f320694679dca412f0cd3922}\label{mlv__arbre__kd_8h_a9a553ff2f320694679dca412f0cd3922}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!mlv\_affichage\_points\_arbre\_kd@{mlv\_affichage\_points\_arbre\_kd}}
+\index{mlv\_affichage\_points\_arbre\_kd@{mlv\_affichage\_points\_arbre\_kd}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_affichage\_points\_arbre\_kd()}{mlv\_affichage\_points\_arbre\_kd()}}
+{\footnotesize\ttfamily void mlv\+\_\+affichage\+\_\+points\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{arbre,  }\item[{int}]{prof }\end{DoxyParamCaption})}
+
+
+
+Affichage des points de l\textquotesingle{}arbre kd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & \\
+\hline
+{\em prof} & \\
+\hline
+\end{DoxyParams}
+Affichage des points de l\textquotesingle{}arbre kd.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & \\
+\hline
+{\em prof} & profondeur de l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_af82a4697d17f79352f21e11bdbb4ffca}\label{mlv__arbre__kd_8h_af82a4697d17f79352f21e11bdbb4ffca}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!mlv\_affichage\_points\_kppv\_liste@{mlv\_affichage\_points\_kppv\_liste}}
+\index{mlv\_affichage\_points\_kppv\_liste@{mlv\_affichage\_points\_kppv\_liste}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_affichage\_points\_kppv\_liste()}{mlv\_affichage\_points\_kppv\_liste()}}
+{\footnotesize\ttfamily void mlv\+\_\+affichage\+\_\+points\+\_\+kppv\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{liste,  }\item[{int}]{nb\+\_\+kppv,  }\item[{MLV\+\_\+\+Color}]{couleur }\end{DoxyParamCaption})}
+
+
+
+Affichage des points de la liste. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & \\
+\hline
+{\em nb\+\_\+kppv} & \\
+\hline
+{\em couleur} & \\
+\hline
+{\em liste} & liste des kppvs \\
+\hline
+{\em nb\+\_\+kppv} & nb max de kppv \\
+\hline
+{\em couleur} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_a1646de43632ad5dac642b92f27069e16}\label{mlv__arbre__kd_8h_a1646de43632ad5dac642b92f27069e16}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!mlv\_classe\_kppv\_arbre@{mlv\_classe\_kppv\_arbre}}
+\index{mlv\_classe\_kppv\_arbre@{mlv\_classe\_kppv\_arbre}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_classe\_kppv\_arbre()}{mlv\_classe\_kppv\_arbre()}}
+{\footnotesize\ttfamily void mlv\+\_\+classe\+\_\+kppv\+\_\+arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{liste,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{int}]{nb\+\_\+kppv }\end{DoxyParamCaption})}
+
+
+
+Affichage de la classe du point calculé en fct des classe de ses kppv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & \\
+\hline
+{\em p} & \\
+\hline
+{\em nb\+\_\+kppv} & \\
+\hline
+{\em liste} & liste des kppv du point \\
+\hline
+{\em p} & point selectionné \\
+\hline
+{\em nb\+\_\+kppv} & nb max de kppv \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_ade13638ba897274c40a2692c146398b7}\label{mlv__arbre__kd_8h_ade13638ba897274c40a2692c146398b7}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!mlv\_dessin\_voisinage\_arbre@{mlv\_dessin\_voisinage\_arbre}}
+\index{mlv\_dessin\_voisinage\_arbre@{mlv\_dessin\_voisinage\_arbre}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_dessin\_voisinage\_arbre()}{mlv\_dessin\_voisinage\_arbre()}}
+{\footnotesize\ttfamily void mlv\+\_\+dessin\+\_\+voisinage\+\_\+arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{liste,  }\item[{int}]{taille\+\_\+liste }\end{DoxyParamCaption})}
+
+
+
+Dessin du voisinage du point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em liste} & \\
+\hline
+{\em taille\+\_\+liste} & \\
+\hline
+{\em p} & point selectionné \\
+\hline
+{\em liste} & liste des kppv \\
+\hline
+{\em taille\+\_\+liste} & taille de la liste \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_a68bf1f2e317afb6398c9549e74ff6721}\label{mlv__arbre__kd_8h_a68bf1f2e317afb6398c9549e74ff6721}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!mlv\_dessin\_zone@{mlv\_dessin\_zone}}
+\index{mlv\_dessin\_zone@{mlv\_dessin\_zone}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_dessin\_zone()}{mlv\_dessin\_zone()}}
+{\footnotesize\ttfamily void mlv\+\_\+dessin\+\_\+zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structzone}{zone}}}]{z,  }\item[{int}]{animation }\end{DoxyParamCaption})}
+
+
+
+Affichage des zones de l\textquotesingle{}arbre kd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & \\
+\hline
+{\em animation} & \\
+\hline
+\end{DoxyParams}
+Affichage des zones de l\textquotesingle{}arbre kd.
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & \\
+\hline
+{\em animation} & booleen pour dessiner avec animation ou non \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_a5443a9fd8e19ce94e699864db5f4068b}\label{mlv__arbre__kd_8h_a5443a9fd8e19ce94e699864db5f4068b}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!mlv\_dessin\_zone\_rec@{mlv\_dessin\_zone\_rec}}
+\index{mlv\_dessin\_zone\_rec@{mlv\_dessin\_zone\_rec}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_dessin\_zone\_rec()}{mlv\_dessin\_zone\_rec()}}
+{\footnotesize\ttfamily void mlv\+\_\+dessin\+\_\+zone\+\_\+rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{arbre,  }\item[{int}]{animation }\end{DoxyParamCaption})}
+
+
+
+Affichage des zones de l\textquotesingle{}arbre kd fonction recursive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & \\
+\hline
+{\em animation} & \\
+\hline
+\end{DoxyParams}
+Affichage des zones de l\textquotesingle{}arbre kd fonction recursive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & \\
+\hline
+{\em animation} & booleen pour dessiner avec animation ou non \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_ab4b6020e840a0f6038f0a9fa7b19f6c7}\label{mlv__arbre__kd_8h_ab4b6020e840a0f6038f0a9fa7b19f6c7}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!mlv\_kppv\_arbre\_kd@{mlv\_kppv\_arbre\_kd}}
+\index{mlv\_kppv\_arbre\_kd@{mlv\_kppv\_arbre\_kd}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_kppv\_arbre\_kd()}{mlv\_kppv\_arbre\_kd()}}
+{\footnotesize\ttfamily void mlv\+\_\+kppv\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Affichage du menu mode kppv arbre kd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+Affichage du menu mode kppv arbre kd.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_aa46f7eab226b8cbc26f7c22560506ada}\label{mlv__arbre__kd_8h_aa46f7eab226b8cbc26f7c22560506ada}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!mlv\_maj\_affichage\_arbre\_kd@{mlv\_maj\_affichage\_arbre\_kd}}
+\index{mlv\_maj\_affichage\_arbre\_kd@{mlv\_maj\_affichage\_arbre\_kd}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_maj\_affichage\_arbre\_kd()}{mlv\_maj\_affichage\_arbre\_kd()}}
+{\footnotesize\ttfamily void mlv\+\_\+maj\+\_\+affichage\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{liste,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{int}]{nb\+\_\+kppv }\end{DoxyParamCaption})}
+
+
+
+Reinitialisation de l\textquotesingle{}affichage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em liste} & \\
+\hline
+{\em p} & \\
+\hline
+{\em nb\+\_\+kppv} & \\
+\hline
+{\em a} & \\
+\hline
+{\em liste} & liste des kppv \\
+\hline
+{\em p} & point selectionné \\
+\hline
+{\em nb\+\_\+kppv} & nombre max de kppv \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__arbre__kd_8h_aa2ad621ca7d64bd16992fcea8f91f6cd}\label{mlv__arbre__kd_8h_aa2ad621ca7d64bd16992fcea8f91f6cd}} 
+\index{mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}!selection\_point\_kppv\_arbre\_kd@{selection\_point\_kppv\_arbre\_kd}}
+\index{selection\_point\_kppv\_arbre\_kd@{selection\_point\_kppv\_arbre\_kd}!mlv\_arbre\_kd.h@{mlv\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{selection\_point\_kppv\_arbre\_kd()}{selection\_point\_kppv\_arbre\_kd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} selection\+\_\+point\+\_\+kppv\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Selection du point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point
+\end{DoxyReturn}
+Selection du point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point 
+\end{DoxyReturn}

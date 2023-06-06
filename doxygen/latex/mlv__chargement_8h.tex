@@ -1,0 +1,100 @@
+\hypertarget{mlv__chargement_8h}{}\doxysection{/home/baptiste/\+L2/\+S2/\+PROG\+\_\+\+IMP/\+PROJET\+\_\+\+KPPV/headers/mlv\+\_\+chargement.h File Reference}
+\label{mlv__chargement_8h}\index{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/mlv\_chargement.h@{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/mlv\_chargement.h}}
+
+
+fonctions de chargement/sauvegarde de fichiers  
+
+
+{\ttfamily \#include \char`\"{}tad\+\_\+tableau\+\_\+points.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mlv\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MLV/\+MLV\+\_\+all.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/wait.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}tad\+\_\+arbre\+\_\+kd.\+h\char`\"{}}\newline
+Include dependency graph for mlv\+\_\+chargement.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mlv__chargement_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mlv__chargement_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{mlv__chargement_8h_a41a9a202eafbc1de5aba9cd40076b51c}{mlv\+\_\+chargement\+\_\+fichier}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Permet de charger un fichier de points dans un tableau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__chargement_8h_aa78c00c8238b9a4c8e2ea1a148fa6bfc}{mlv\+\_\+sauvegarde\+\_\+fichier}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Permet de sauvegarder un tableau de points dans un fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__chargement_8h_a6acc0949c63ea58d593664bc2c888ac2}{mlv\+\_\+generation\+\_\+fichier}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$arbre)
+\begin{DoxyCompactList}\small\item\em Permet de générer un fichier de points aléatoires. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+fonctions de chargement/sauvegarde de fichiers 
+
+\begin{DoxyAuthor}{Author}
+mathevon/palisse 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/21 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mlv__chargement_8h_a41a9a202eafbc1de5aba9cd40076b51c}\label{mlv__chargement_8h_a41a9a202eafbc1de5aba9cd40076b51c}} 
+\index{mlv\_chargement.h@{mlv\_chargement.h}!mlv\_chargement\_fichier@{mlv\_chargement\_fichier}}
+\index{mlv\_chargement\_fichier@{mlv\_chargement\_fichier}!mlv\_chargement.h@{mlv\_chargement.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_chargement\_fichier()}{mlv\_chargement\_fichier()}}
+{\footnotesize\ttfamily void mlv\+\_\+chargement\+\_\+fichier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Permet de charger un fichier de points dans un tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__chargement_8h_a6acc0949c63ea58d593664bc2c888ac2}\label{mlv__chargement_8h_a6acc0949c63ea58d593664bc2c888ac2}} 
+\index{mlv\_chargement.h@{mlv\_chargement.h}!mlv\_generation\_fichier@{mlv\_generation\_fichier}}
+\index{mlv\_generation\_fichier@{mlv\_generation\_fichier}!mlv\_chargement.h@{mlv\_chargement.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_generation\_fichier()}{mlv\_generation\_fichier()}}
+{\footnotesize\ttfamily void mlv\+\_\+generation\+\_\+fichier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$}]{arbre }\end{DoxyParamCaption})}
+
+
+
+Permet de générer un fichier de points aléatoires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em arbre} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__chargement_8h_aa78c00c8238b9a4c8e2ea1a148fa6bfc}\label{mlv__chargement_8h_aa78c00c8238b9a4c8e2ea1a148fa6bfc}} 
+\index{mlv\_chargement.h@{mlv\_chargement.h}!mlv\_sauvegarde\_fichier@{mlv\_sauvegarde\_fichier}}
+\index{mlv\_sauvegarde\_fichier@{mlv\_sauvegarde\_fichier}!mlv\_chargement.h@{mlv\_chargement.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_sauvegarde\_fichier()}{mlv\_sauvegarde\_fichier()}}
+{\footnotesize\ttfamily void mlv\+\_\+sauvegarde\+\_\+fichier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Permet de sauvegarder un tableau de points dans un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}

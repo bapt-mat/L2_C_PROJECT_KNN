@@ -1,0 +1,123 @@
+\hypertarget{mlv__creation_8h}{}\doxysection{/home/baptiste/\+L2/\+S2/\+PROG\+\_\+\+IMP/\+PROJET\+\_\+\+KPPV/headers/mlv\+\_\+creation.h File Reference}
+\label{mlv__creation_8h}\index{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/mlv\_creation.h@{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/mlv\_creation.h}}
+
+
+mode creation mlv  
+
+
+{\ttfamily \#include \char`\"{}tad\+\_\+tableau\+\_\+points.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tad\+\_\+arbre\+\_\+kd.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mlv\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}MLV/\+MLV\+\_\+all.\+h\char`\"{}}\newline
+Include dependency graph for mlv\+\_\+creation.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mlv__creation_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mlv__creation_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpoint}{point}} $\ast$ \mbox{\hyperlink{mlv__creation_8h_af48c757895ac245e85078a8ee7f04b8a}{mlv\+\_\+creer\+\_\+point}} ()
+\begin{DoxyCompactList}\small\item\em Creation d\textquotesingle{}un point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__creation_8h_a6e691e1568a0a4062ec9dec9eaa2e51e}{mlv\+\_\+ajouter\+\_\+point}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Ajouter des points au tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mlv__creation_8h_a87343329c0e95a7ab4ca0cc833d8202c}{selection\+\_\+point}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Selection d\textquotesingle{}un point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mlv__creation_8h_aa7789894aa746e1d30f0f60e0890cdd4}{mlv\+\_\+supprimer\+\_\+point}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau)
+\begin{DoxyCompactList}\small\item\em Supprimer les points selectionnés. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+mode creation mlv 
+
+\begin{DoxyAuthor}{Author}
+mathevon/palisse 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/21 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mlv__creation_8h_a6e691e1568a0a4062ec9dec9eaa2e51e}\label{mlv__creation_8h_a6e691e1568a0a4062ec9dec9eaa2e51e}} 
+\index{mlv\_creation.h@{mlv\_creation.h}!mlv\_ajouter\_point@{mlv\_ajouter\_point}}
+\index{mlv\_ajouter\_point@{mlv\_ajouter\_point}!mlv\_creation.h@{mlv\_creation.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_ajouter\_point()}{mlv\_ajouter\_point()}}
+{\footnotesize\ttfamily void mlv\+\_\+ajouter\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+Ajouter des points au tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__creation_8h_af48c757895ac245e85078a8ee7f04b8a}\label{mlv__creation_8h_af48c757895ac245e85078a8ee7f04b8a}} 
+\index{mlv\_creation.h@{mlv\_creation.h}!mlv\_creer\_point@{mlv\_creer\_point}}
+\index{mlv\_creer\_point@{mlv\_creer\_point}!mlv\_creation.h@{mlv\_creation.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_creer\_point()}{mlv\_creer\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}}$\ast$ mlv\+\_\+creer\+\_\+point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creation d\textquotesingle{}un point. 
+
+\begin{DoxyReturn}{Returns}
+point$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mlv__creation_8h_aa7789894aa746e1d30f0f60e0890cdd4}\label{mlv__creation_8h_aa7789894aa746e1d30f0f60e0890cdd4}} 
+\index{mlv\_creation.h@{mlv\_creation.h}!mlv\_supprimer\_point@{mlv\_supprimer\_point}}
+\index{mlv\_supprimer\_point@{mlv\_supprimer\_point}!mlv\_creation.h@{mlv\_creation.h}}
+\doxysubsubsection{\texorpdfstring{mlv\_supprimer\_point()}{mlv\_supprimer\_point()}}
+{\footnotesize\ttfamily void mlv\+\_\+supprimer\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Supprimer les points selectionnés. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+Supprimer les points selectionnés.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mlv__creation_8h_a87343329c0e95a7ab4ca0cc833d8202c}\label{mlv__creation_8h_a87343329c0e95a7ab4ca0cc833d8202c}} 
+\index{mlv\_creation.h@{mlv\_creation.h}!selection\_point@{selection\_point}}
+\index{selection\_point@{selection\_point}!mlv\_creation.h@{mlv\_creation.h}}
+\doxysubsubsection{\texorpdfstring{selection\_point()}{selection\_point()}}
+{\footnotesize\ttfamily int selection\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau }\end{DoxyParamCaption})}
+
+
+
+Selection d\textquotesingle{}un point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

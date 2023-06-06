@@ -1,0 +1,675 @@
+\hypertarget{tad__arbre__kd_8h}{}\doxysection{/home/baptiste/\+L2/\+S2/\+PROG\+\_\+\+IMP/\+PROJET\+\_\+\+KPPV/headers/tad\+\_\+arbre\+\_\+kd.h File Reference}
+\label{tad__arbre__kd_8h}\index{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/tad\_arbre\_kd.h@{/home/baptiste/L2/S2/PROG\_IMP/PROJET\_KPPV/headers/tad\_arbre\_kd.h}}
+
+
+TAD arbre kd.  
+
+
+{\ttfamily \#include \char`\"{}tad\+\_\+tableau\+\_\+points.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kppv.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for tad\+\_\+arbre\+\_\+kd.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tad__arbre__kd_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tad__arbre__kd_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structzone}{zone}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}une zone d\textquotesingle{}un point. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structnoeud}{noeud}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}un noeud de l\textquotesingle{}arbre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{tad__arbre__kd_8h_a655f64cfd2fd6b8fcee0e5f95e9b1adb}\label{tad__arbre__kd_8h_a655f64cfd2fd6b8fcee0e5f95e9b1adb}} 
+typedef struct \mbox{\hyperlink{structzone}{zone}} \mbox{\hyperlink{tad__arbre__kd_8h_a655f64cfd2fd6b8fcee0e5f95e9b1adb}{zone}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}une zone d\textquotesingle{}un point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tad__arbre__kd_8h_a23a591b87421332275c57bbc0bd88c83}\label{tad__arbre__kd_8h_a23a591b87421332275c57bbc0bd88c83}} 
+typedef struct \mbox{\hyperlink{structnoeud}{noeud}} \mbox{\hyperlink{tad__arbre__kd_8h_a23a591b87421332275c57bbc0bd88c83}{noeud}}
+\begin{DoxyCompactList}\small\item\em Structure d\textquotesingle{}un noeud de l\textquotesingle{}arbre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}\label{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}} 
+typedef \mbox{\hyperlink{structnoeud}{noeud}} $\ast$ \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}
+\begin{DoxyCompactList}\small\item\em Type arbre\+\_\+kd. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{tad__arbre__kd_8h_a903f4ca25bb787b39aadc5c993d160fd}{est\+\_\+vide\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Test si un arbre est vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{tad__arbre__kd_8h_aa39f8c777b8628cb836f70aad13d4d56}{creer\+\_\+arbre\+\_\+kd\+\_\+vide}} ()
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}un arbre vide. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tad__arbre__kd_8h_a41d3f03cf21d3da67aeb8b45e7c95b57}{afficher\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Affichage de l\textquotesingle{}arbre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structzone}{zone}} \mbox{\hyperlink{tad__arbre__kd_8h_a02172001afbbf4e3bf09fa856e841c09}{creer\+\_\+zone}} (float x\+\_\+max, float x\+\_\+min, float y\+\_\+max, float y\+\_\+min)
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}une zone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tad__arbre__kd_8h_a856424794936161c415e053ed1d83d88}{inserer\+\_\+aux}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} $\ast$p, \mbox{\hyperlink{structzone}{zone}} z)
+\begin{DoxyCompactList}\small\item\em Insertion d\textquotesingle{}un point dans l\textquotesingle{}arbre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{tad__arbre__kd_8h_a38f962fbbedd686a1277b7c0a7a14337}{inserer}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Insertion d\textquotesingle{}un point dans l\textquotesingle{}arbre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tad__arbre__kd_8h_a1d271b27dcb8adf7e89361c3fc031e9a}{est\+\_\+feuille}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Teste si un arbre est une feuille. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{tad__arbre__kd_8h_aabbee6db717cd6f6a5f017bea0271b88}{rechercher\+\_\+parent}} (\mbox{\hyperlink{structpoint}{point}} p, \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Recherche parent d\textquotesingle{}un point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{tad__arbre__kd_8h_a40be83de9379dbbefeb710633f3a73c1}{supprimer\+\_\+feuille}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Supprime une feuille. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{tad__arbre__kd_8h_aef61ca907823ece311f9031f3cac254d}{vider\+\_\+arbre}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Vide l\textquotesingle{}arbre kd. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{tad__arbre__kd_8h_a78ee8f461360bf17461186c0564164d1}{orchestre\+\_\+suppression}} (\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}} tableau, \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Met a jour l\textquotesingle{}arbre kd pour correspondre au tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tad__arbre__kd_8h_af9a84d8abdc2be2d469a8d901d5a6c0c}{chargement\+\_\+fichier\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$a, char $\ast$nom\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em Chargement d\textquotesingle{}un fichier de points dans un arbre kd. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tad__arbre__kd_8h_aa9a4db1db55546c320c63e3000d3a7ef}{est\+\_\+dans\+\_\+zone}} (\mbox{\hyperlink{structpoint}{point}} p, \mbox{\hyperlink{structzone}{zone}} z\+\_\+tmp)
+\begin{DoxyCompactList}\small\item\em Test si un point est dans une zone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} $\ast$ \mbox{\hyperlink{tad__arbre__kd_8h_ac30e356480371347cd7c8e3cc6ce24db}{maj\+\_\+liste}} (\mbox{\hyperlink{structpoint}{point}} $\ast$p\+\_\+tmp, \mbox{\hyperlink{structpoint}{point}} $\ast$liste, int nb\+\_\+kppv, int $\ast$taille\+\_\+liste)
+\begin{DoxyCompactList}\small\item\em Met a jour la liste des kppv actuel avec le nouveau point. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{tad__arbre__kd_8h_a2b03d75f10c3375221bda0b1f944c31d}{d\+\_\+max\+\_\+liste}} (\mbox{\hyperlink{structpoint}{point}} p, \mbox{\hyperlink{structpoint}{point}} $\ast$liste, int taille\+\_\+liste)
+\begin{DoxyCompactList}\small\item\em Distance max entre le point et la liste des kppv. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{tad__arbre__kd_8h_a694026594e55c2d764433b3ac354d3e7}{point\+\_\+proche\+\_\+dans\+\_\+zone}} (\mbox{\hyperlink{structpoint}{point}} $\ast$p, \mbox{\hyperlink{structzone}{zone}} z\+\_\+tmp)
+\begin{DoxyCompactList}\small\item\em Recherche le point potentiel le plus proche dans la zone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tad__arbre__kd_8h_a71e90fd3ad5b0fc123caeba7c7510b38}{recherche\+\_\+rec}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$a, \mbox{\hyperlink{structpoint}{point}} p, int k, \mbox{\hyperlink{structpoint}{point}} $\ast$$\ast$liste\+\_\+kppv, int $\ast$taille\+\_\+liste)
+\begin{DoxyCompactList}\small\item\em Recherche des kppv. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} $\ast$ \mbox{\hyperlink{tad__arbre__kd_8h_a3444619c60befe90f471e53081014e0b}{rechercher}} (\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$a, \mbox{\hyperlink{structpoint}{point}} p, int nb\+\_\+kppv)
+\begin{DoxyCompactList}\small\item\em Recherche des kppv. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tad__arbre__kd_8h_a5731c3865b8426eecc2e026a75f79d70}{classe\+\_\+kppv\+\_\+arbre}} (\mbox{\hyperlink{structpoint}{point}} $\ast$liste, int nb\+\_\+kppv)
+\begin{DoxyCompactList}\small\item\em Calcul de la classe du point en fonction des la classe de ses kppv. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TAD arbre kd. 
+
+\begin{DoxyAuthor}{Author}
+mathevon/palisse 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/21 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a41d3f03cf21d3da67aeb8b45e7c95b57}\label{tad__arbre__kd_8h_a41d3f03cf21d3da67aeb8b45e7c95b57}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!afficher\_arbre\_kd@{afficher\_arbre\_kd}}
+\index{afficher\_arbre\_kd@{afficher\_arbre\_kd}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_arbre\_kd()}{afficher\_arbre\_kd()}}
+{\footnotesize\ttfamily void afficher\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Affichage de l\textquotesingle{}arbre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+Affichage de l\textquotesingle{}arbre.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tad__arbre__kd_8h_af9a84d8abdc2be2d469a8d901d5a6c0c}\label{tad__arbre__kd_8h_af9a84d8abdc2be2d469a8d901d5a6c0c}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!chargement\_fichier\_arbre\_kd@{chargement\_fichier\_arbre\_kd}}
+\index{chargement\_fichier\_arbre\_kd@{chargement\_fichier\_arbre\_kd}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{chargement\_fichier\_arbre\_kd()}{chargement\_fichier\_arbre\_kd()}}
+{\footnotesize\ttfamily int chargement\+\_\+fichier\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$}]{a,  }\item[{char $\ast$}]{nom\+\_\+fichier }\end{DoxyParamCaption})}
+
+
+
+Chargement d\textquotesingle{}un fichier de points dans un arbre kd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em nom\+\_\+fichier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Chargement d\textquotesingle{}un fichier de points dans un arbre kd.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em nom\+\_\+fichier} & nom du fichier a charger dans l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a5731c3865b8426eecc2e026a75f79d70}\label{tad__arbre__kd_8h_a5731c3865b8426eecc2e026a75f79d70}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!classe\_kppv\_arbre@{classe\_kppv\_arbre}}
+\index{classe\_kppv\_arbre@{classe\_kppv\_arbre}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{classe\_kppv\_arbre()}{classe\_kppv\_arbre()}}
+{\footnotesize\ttfamily int classe\+\_\+kppv\+\_\+arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{liste,  }\item[{int}]{nb\+\_\+kppv }\end{DoxyParamCaption})}
+
+
+
+Calcul de la classe du point en fonction des la classe de ses kppv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & \\
+\hline
+{\em nb\+\_\+kppv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Calcul de la classe du point en fonction des la classe de ses kppv.
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & liste des kppv \\
+\hline
+{\em nb\+\_\+kppv} & nb max de kppv \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_aa39f8c777b8628cb836f70aad13d4d56}\label{tad__arbre__kd_8h_aa39f8c777b8628cb836f70aad13d4d56}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!creer\_arbre\_kd\_vide@{creer\_arbre\_kd\_vide}}
+\index{creer\_arbre\_kd\_vide@{creer\_arbre\_kd\_vide}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{creer\_arbre\_kd\_vide()}{creer\_arbre\_kd\_vide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} creer\+\_\+arbre\+\_\+kd\+\_\+vide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Création d\textquotesingle{}un arbre vide. 
+
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+Création d\textquotesingle{}un arbre vide.
+
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a02172001afbbf4e3bf09fa856e841c09}\label{tad__arbre__kd_8h_a02172001afbbf4e3bf09fa856e841c09}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!creer\_zone@{creer\_zone}}
+\index{creer\_zone@{creer\_zone}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{creer\_zone()}{creer\_zone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structzone}{zone}} creer\+\_\+zone (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+max,  }\item[{float}]{x\+\_\+min,  }\item[{float}]{y\+\_\+max,  }\item[{float}]{y\+\_\+min }\end{DoxyParamCaption})}
+
+
+
+Création d\textquotesingle{}une zone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+max} & \\
+\hline
+{\em x\+\_\+min} & \\
+\hline
+{\em y\+\_\+max} & \\
+\hline
+{\em y\+\_\+min} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zone
+\end{DoxyReturn}
+Création d\textquotesingle{}une zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+max} & \\
+\hline
+{\em x\+\_\+min} & \\
+\hline
+{\em y\+\_\+max} & \\
+\hline
+{\em y\+\_\+min} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zone 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a2b03d75f10c3375221bda0b1f944c31d}\label{tad__arbre__kd_8h_a2b03d75f10c3375221bda0b1f944c31d}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!d\_max\_liste@{d\_max\_liste}}
+\index{d\_max\_liste@{d\_max\_liste}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{d\_max\_liste()}{d\_max\_liste()}}
+{\footnotesize\ttfamily float d\+\_\+max\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{liste,  }\item[{int}]{taille\+\_\+liste }\end{DoxyParamCaption})}
+
+
+
+Distance max entre le point et la liste des kppv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em liste} & \\
+\hline
+{\em taille\+\_\+liste} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float
+\end{DoxyReturn}
+Distance max entre le point et la liste des kppv.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & point recherché \\
+\hline
+{\em liste} & liste des points kppv actuels \\
+\hline
+{\em taille\+\_\+liste} & taille de la liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_aa9a4db1db55546c320c63e3000d3a7ef}\label{tad__arbre__kd_8h_aa9a4db1db55546c320c63e3000d3a7ef}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!est\_dans\_zone@{est\_dans\_zone}}
+\index{est\_dans\_zone@{est\_dans\_zone}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{est\_dans\_zone()}{est\_dans\_zone()}}
+{\footnotesize\ttfamily int est\+\_\+dans\+\_\+zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{\mbox{\hyperlink{structzone}{zone}}}]{z\+\_\+tmp }\end{DoxyParamCaption})}
+
+
+
+Test si un point est dans une zone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em z\+\_\+tmp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Test si un point est dans une zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & point a verifier \\
+\hline
+{\em z\+\_\+tmp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a1d271b27dcb8adf7e89361c3fc031e9a}\label{tad__arbre__kd_8h_a1d271b27dcb8adf7e89361c3fc031e9a}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!est\_feuille@{est\_feuille}}
+\index{est\_feuille@{est\_feuille}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{est\_feuille()}{est\_feuille()}}
+{\footnotesize\ttfamily int est\+\_\+feuille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Teste si un arbre est une feuille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Teste si un arbre est une feuille.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a903f4ca25bb787b39aadc5c993d160fd}\label{tad__arbre__kd_8h_a903f4ca25bb787b39aadc5c993d160fd}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!est\_vide\_arbre\_kd@{est\_vide\_arbre\_kd}}
+\index{est\_vide\_arbre\_kd@{est\_vide\_arbre\_kd}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{est\_vide\_arbre\_kd()}{est\_vide\_arbre\_kd()}}
+{\footnotesize\ttfamily int est\+\_\+vide\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+Test si un arbre est vide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Test si un arbre est vide.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a38f962fbbedd686a1277b7c0a7a14337}\label{tad__arbre__kd_8h_a38f962fbbedd686a1277b7c0a7a14337}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!inserer@{inserer}}
+\index{inserer@{inserer}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{inserer()}{inserer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} inserer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Insertion d\textquotesingle{}un point dans l\textquotesingle{}arbre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+Insertion d\textquotesingle{}un point dans l\textquotesingle{}arbre.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em p} & point a inserer dans l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a856424794936161c415e053ed1d83d88}\label{tad__arbre__kd_8h_a856424794936161c415e053ed1d83d88}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!inserer\_aux@{inserer\_aux}}
+\index{inserer\_aux@{inserer\_aux}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{inserer\_aux()}{inserer\_aux()}}
+{\footnotesize\ttfamily void inserer\+\_\+aux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{structzone}{zone}}}]{z }\end{DoxyParamCaption})}
+
+
+
+Insertion d\textquotesingle{}un point dans l\textquotesingle{}arbre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em p} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+Insertion d\textquotesingle{}un point dans l\textquotesingle{}arbre.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em p} & point a insérer dans l\textquotesingle{}arbre \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tad__arbre__kd_8h_ac30e356480371347cd7c8e3cc6ce24db}\label{tad__arbre__kd_8h_ac30e356480371347cd7c8e3cc6ce24db}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!maj\_liste@{maj\_liste}}
+\index{maj\_liste@{maj\_liste}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{maj\_liste()}{maj\_liste()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}}$\ast$ maj\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{liste,  }\item[{int}]{nb\+\_\+kppv,  }\item[{int $\ast$}]{taille\+\_\+liste }\end{DoxyParamCaption})}
+
+
+
+Met a jour la liste des kppv actuel avec le nouveau point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tmp} & \\
+\hline
+{\em liste} & \\
+\hline
+{\em nb\+\_\+kppv} & \\
+\hline
+{\em taille\+\_\+liste} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point$\ast$
+\end{DoxyReturn}
+Met a jour la liste des kppv actuel avec le nouveau point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & le point a ajouter/verifier \\
+\hline
+{\em liste} & liste contenant les kppv actuels \\
+\hline
+{\em nb\+\_\+kppv} & le nombre kppv max \\
+\hline
+{\em taille\+\_\+liste} & la taille actuelle de la liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a78ee8f461360bf17461186c0564164d1}\label{tad__arbre__kd_8h_a78ee8f461360bf17461186c0564164d1}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!orchestre\_suppression@{orchestre\_suppression}}
+\index{orchestre\_suppression@{orchestre\_suppression}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{orchestre\_suppression()}{orchestre\_suppression()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} orchestre\+\_\+suppression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__tableau__points_8h_a4b25b3d6d49620ba91285a0258fe0aca}{tab\+\_\+points}}}]{tableau,  }\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Met a jour l\textquotesingle{}arbre kd pour correspondre au tableau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+Met a jour l\textquotesingle{}arbre kd pour correspondre au tableau.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a694026594e55c2d764433b3ac354d3e7}\label{tad__arbre__kd_8h_a694026594e55c2d764433b3ac354d3e7}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!point\_proche\_dans\_zone@{point\_proche\_dans\_zone}}
+\index{point\_proche\_dans\_zone@{point\_proche\_dans\_zone}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{point\_proche\_dans\_zone()}{point\_proche\_dans\_zone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} point\+\_\+proche\+\_\+dans\+\_\+zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$}]{p,  }\item[{\mbox{\hyperlink{structzone}{zone}}}]{z\+\_\+tmp }\end{DoxyParamCaption})}
+
+
+
+Recherche le point potentiel le plus proche dans la zone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em z\+\_\+tmp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point
+\end{DoxyReturn}
+Recherche le point potentiel le plus proche dans la zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em z\+\_\+tmp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a71e90fd3ad5b0fc123caeba7c7510b38}\label{tad__arbre__kd_8h_a71e90fd3ad5b0fc123caeba7c7510b38}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!recherche\_rec@{recherche\_rec}}
+\index{recherche\_rec@{recherche\_rec}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{recherche\_rec()}{recherche\_rec()}}
+{\footnotesize\ttfamily void recherche\+\_\+rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{int}]{nb\+\_\+kppv,  }\item[{\mbox{\hyperlink{structpoint}{point}} $\ast$$\ast$}]{liste\+\_\+kppv,  }\item[{int $\ast$}]{taille\+\_\+liste }\end{DoxyParamCaption})}
+
+
+
+Recherche des kppv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em p} & \\
+\hline
+{\em k} & \\
+\hline
+{\em liste\+\_\+kppv} & \\
+\hline
+{\em taille\+\_\+liste} & \\
+\hline
+\end{DoxyParams}
+Recherche des kppv.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em p} & \\
+\hline
+{\em nb\+\_\+kppv} & nb max de kppv \\
+\hline
+{\em liste\+\_\+kppv} & liste actuel des kppv \\
+\hline
+{\em taille\+\_\+liste} & taille actuel de la liste \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a3444619c60befe90f471e53081014e0b}\label{tad__arbre__kd_8h_a3444619c60befe90f471e53081014e0b}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!rechercher@{rechercher}}
+\index{rechercher@{rechercher}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{rechercher()}{rechercher()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}}$\ast$ rechercher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{int}]{nb\+\_\+kppv }\end{DoxyParamCaption})}
+
+
+
+Recherche des kppv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em p} & \\
+\hline
+{\em nb\+\_\+kppv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point$\ast$
+\end{DoxyReturn}
+Recherche des kppv.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em p} & \\
+\hline
+{\em nb\+\_\+kppv} & nombre max de kppv \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_aabbee6db717cd6f6a5f017bea0271b88}\label{tad__arbre__kd_8h_aabbee6db717cd6f6a5f017bea0271b88}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!rechercher\_parent@{rechercher\_parent}}
+\index{rechercher\_parent@{rechercher\_parent}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{rechercher\_parent()}{rechercher\_parent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} rechercher\+\_\+parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Recherche parent d\textquotesingle{}un point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_a40be83de9379dbbefeb710633f3a73c1}\label{tad__arbre__kd_8h_a40be83de9379dbbefeb710633f3a73c1}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!supprimer\_feuille@{supprimer\_feuille}}
+\index{supprimer\_feuille@{supprimer\_feuille}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{supprimer\_feuille()}{supprimer\_feuille()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} supprimer\+\_\+feuille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Supprime une feuille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tad__arbre__kd_8h_aef61ca907823ece311f9031f3cac254d}\label{tad__arbre__kd_8h_aef61ca907823ece311f9031f3cac254d}} 
+\index{tad\_arbre\_kd.h@{tad\_arbre\_kd.h}!vider\_arbre@{vider\_arbre}}
+\index{vider\_arbre@{vider\_arbre}!tad\_arbre\_kd.h@{tad\_arbre\_kd.h}}
+\doxysubsubsection{\texorpdfstring{vider\_arbre()}{vider\_arbre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} vider\+\_\+arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tad__arbre__kd_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Vide l\textquotesingle{}arbre kd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+Vide l\textquotesingle{}arbre kd.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
