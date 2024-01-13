@@ -1,52 +1,52 @@
-PROJET DE PROGRAMMATION IMPERATIVE - L2 INFO
-K Plus Proches Voisins
+IMPERATIVE PROGRAMMING PROJECT - L2 INFO - C Langage
+K Nearest Neighbors
 
 MATHEVON Baptiste - PALISSE Erwann
 
-Rapport :
+Report :
 -> cd rapport
 
-Documentation Doxygen disponible (html, latex)
-Pour la doc html :
+Doxygen documentation available (html, latex)
+For html doc :
 -> cd doxygen/html
--> ouvrir le fichier index.html dans un navigateur
+-> open the index.html file in a browser
 
-Pour la doc latex/pdf :
+For latex/pdf doc :
 -> cd doxygen/latex
 -> make
--> ouvrir le fichier refman.pdf 
+-> open file refman.pdf 
 
-Exécutable principal :
+Main executable :
 -> make;
--> Usage : ./main <MLV_yes_no> <chemin_fichier (opt.)> <nb_kppv (opt.)> <mode (tab/tab_fusion/arbre) (opt.)>
--> ./main yes (lancement de l'exécutable avec MLV)
--> ./main no <chemin_fichier> <nb_kppv> <mode (tab/tab_fusion/arbre)> (utilisé pour les temps de calcul)
+-> Usage: ./main <MLV_yes_no> <file_path (opt.)> <nb_kppv (opt.)> <mode (tab/tab_merge/tree) (opt.)>
+-> ./main yes (launch executable with MLV)
+-> ./main no <file_path> <nb_kppv> <mode (tab/tab_fusion/tree)> (used for calculation times)
 
-Exécutable génération de fichiers de tests :
+Executable test file generation :
 -> cd donnees/prog_creation
 -> gcc creation.c -o (script_creation/creation)
 
-Génération de fichiers de tests :
+Generation of test files :
 -> cd donnees/
 -> bash data_gen.sh
 -> Usage: data_gen.sh <nb_points> <nb_dim> <nb_classes>
 
-Génération des temps de calcul :
+Generate calculation times :
 -> cd time_analysis
 -> bash script_time.sh
--> Usage: script_time.sh <nb_points> <valeur_de_k> <mode(tab/tab_fusion/arbre)>
+-> Usage: script_time.sh <nb_points> <k_value> <mode(tab/tab_fusion/tree)>
 
-Calcul des moyennes :
+Calculation of averages :
 -> cd time_analysis
 -> bash script_moyenne.sh
--> Usage: script_moyenne.sh <type_moy (en fct de k/n)> <nb_n si n/nb_k si k> <mode>
+-> Usage: script_average.sh <average_type (depending on k/n)> <nb_n if n/nb_k if k> <mode>
 
-Génération des graphiques :
+Generate graphs :
 -> cd time_analysis
 -> bash script_graph.sh
--> Usage: script_graph.sh <en fct de n ou k> <valeur de n/k>
+-> Usage: script_graph.sh <in fct of n or k> <value of n/k>
 
-Script démo :
+Demo script :
 -> cd time_analysis
 -> bash script_demo.sh
 -> Usage: script_demo.sh <nb_points>
