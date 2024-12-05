@@ -1,7 +1,7 @@
 IMPERATIVE PROGRAMMING PROJECT - L2 INFO - C Langage
 K Nearest Neighbors
 
-MATHEVON Baptiste - PALISSE Erwann
+MATHEVON Baptiste
 
 Report :
 -> cd rapport
